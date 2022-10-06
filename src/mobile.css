@@ -1,5 +1,31 @@
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
+    :root {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
     .landing-section {
-      flex-direction: column;
+        flex-direction: column;
+    }
+
+    .skills-section {
+        margin: 0rem;
+        background-color: var(--color-black);
+
+        padding: 5rem 0rem;
+    }
+
+    .skill-card {
+        height: 14rem;
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    .skill-card-image {
+        height: 10rem;
+    }
+
+    .skill-card-name {
+        font-size: 1.3rem;
     }
 }
