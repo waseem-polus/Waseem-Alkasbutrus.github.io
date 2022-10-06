@@ -3,6 +3,13 @@
 body {
   font-family: 'Space Grotesk';
   margin: 0rem;
+  background-color: var(--color-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
@@ -32,6 +39,106 @@ body {
   text-align: center;
   font-size: 2.5rem;
   text-decoration: underline;
+}
+
+.landing-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+
+  background-color: var(--color-white);
+}
+
+.landing-section-image {
+  height: 25rem;
+  margin: 0rem;
+
+  border-radius: 360px;
+}
+
+.landing-section-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.landing-section-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.landing-section-hello {
+  margin: 0rem;
+  font-size: 2rem;
+}
+
+.landing-section-name {
+  display: inline-block;
+  margin: 0rem;
+  padding-right: 0.5rem;
+  
+  border-radius: 10px;
+  border: 3px solid var(--color-black);
+  
+  background-color: var(--color-black);
+  font-size: 2.5rem;
+  color: var(--color-white);
+  letter-spacing: 0.15rem;
+}
+
+.landing-section-name > span {
+  background-color: var(--color-white);
+  border-radius: 10px;
+
+
+  padding-inline: 0.5rem;
+  color: var(--color-black);
+}
+
+.landing-section-description {
+  margin: 0rem;
+  font-size: 1rem;
+
+  width: 23rem;
+}
+
+.landing-section-button-list {
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0rem;
+  list-style: none;
+  gap: 1rem;
+}
+
+.landing-section-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:0.5rem;
+  
+  margin: 0rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  
+  background-color: var(--color-red);
+  border: 2px solid var(--color-black);
+
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1rem;
+}
+
+.landing-section-button > img {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  color: var(--color-black);
 }
 
 .flex-container {
@@ -85,7 +192,7 @@ body {
   margin: 0rem;
   background-color: var(--color-white);
 
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
 }
 
 .project-card {
@@ -95,7 +202,7 @@ body {
   gap: 1rem;
 
   border-radius: 10px;
-  border: 2px solid var(--color-red);
+  /* border: 2px solid var(--color-red); */
   color: var(--color-white);
   background-size: contain;
   box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
@@ -105,13 +212,16 @@ body {
 }
 
 .project-card-black-area {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
 
   height: 9rem;
+  width: 100%;
   border-radius: 10px;
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
   align-self: end;
   align-items: end;
   padding: 0rem 1rem;
@@ -126,7 +236,7 @@ body {
 .project-card-top-line {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
 }
 
 .project-card-chip-list {
@@ -146,7 +256,7 @@ body {
   display: inline;
   padding: 0.2rem 0.5rem;
 
-  border: 0.15rem solid var(--color-red);
+  border: 0.1rem solid var(--color-red);
   border-radius: 10px;
 }
 
@@ -165,11 +275,10 @@ body {
 }
 
 .project-card-github {
-  height: 9rem;
-
   padding-left: 1rem;
+  padding-bottom: 1rem;
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .project-card-github > img {
