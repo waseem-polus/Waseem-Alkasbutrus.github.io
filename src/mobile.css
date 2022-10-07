@@ -79,12 +79,13 @@
   }
 
   .projects-container {
-    justify-content: stretch;
+    justify-content: center;
   }
 
   .project-card {
     width: auto;
-    height: 16rem;
+    height: auto;
+    aspect-ratio: 16/9;
 
     gap: 0.5rem;
 
