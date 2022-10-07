@@ -1,13 +1,17 @@
 @media screen and (max-width: 750px) {
-    :root {
-        overflow-x: hidden;
-    }
+  :root {
+    overflow-x: hidden;
+  }
+
+  .flex-container {
+    justify-content: start;
+  }
 
   .landing-section {
     flex-direction: column;
-    justify-content: start;
+    justify-content: stretch;
 
-    padding: 3rem 0rem;
+    padding: 3rem 1rem;
   }
 
   .landing-section-image {
@@ -41,7 +45,7 @@
 
   .landing-section-button {
     gap: 1rem;
-    
+
     font-size: 1.5rem;
   }
 
@@ -71,5 +75,66 @@
     font-size: 1.3rem;
   }
 
+  .projects-section {
+    margin: 0rem;
+    background-color: var(--color-white);
 
+    padding: 5rem 1rem;
+  }
+
+  .project-card {
+    width: auto;
+    height: 14rem;
+
+    gap: 0.5rem;
+
+    box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-card-black-area {
+    height: auto;
+    width: 100%;
+
+    padding: 0rem 0.5rem;
+  }
+
+  .project-card-top-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .project-card-chip-list {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .project-card-chip {
+    padding: 0.1rem 0.3rem;
+
+    font-size: 1rem;
+  }
+
+  .prject-card-description {
+    margin-block: 0.5rem 0.5rem;
+
+    font-size: 1.1rem;
+  }
+
+  .project-card-github {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: end;
+  }
+
+  .project-card-github > img {
+    width: 3rem;
+    height: 3rem;
+  }
 }

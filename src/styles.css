@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
+:root {
+  --color-black: #2c2c2c;
+  --color-red: #ff6a6a;
+  --color-white: #ededed;
+}
+
 body {
   font-family: 'Space Grotesk';
+  color: var(--color-black);
   margin: 0rem;
   background-color: var(--color-white);
 }
@@ -10,12 +17,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-  --color-black: #2c2c2c;
-  --color-red: #ff6a6a;
-  --color-white: #ededed;
 }
 
 .skew {
