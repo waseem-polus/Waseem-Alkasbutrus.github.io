@@ -2,13 +2,15 @@
     .landing-section {
         flex-direction: column;
         justify-content: start;
+
+        padding: 3rem 0rem;
     }
 
     .skills-section {
         margin: 0rem;
         background-color: var(--color-black);
-
-        padding: 5rem 0rem;
+        
+        padding: 5rem 1rem;
     }
 
     .skill-card {
