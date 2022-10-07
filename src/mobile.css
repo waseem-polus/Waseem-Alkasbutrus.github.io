@@ -84,17 +84,17 @@
   }
 
   .skill-card {
-    height: 14rem;
-    width: 10rem;
+    height: 12rem;
+    width: 8rem;
     padding: 1rem;
   }
 
   .skill-card-image {
-    height: 10rem;
+    height: 18rem;
   }
 
   .skill-card-name {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .projects-section {
