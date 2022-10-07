@@ -89,6 +89,10 @@
     padding: 1rem;
   }
 
+  .skill-card:hover {
+    transform: none;
+  }
+
   .skill-card-image {
     height: 18rem;
   }
@@ -147,11 +151,16 @@
   .project-card-chip {
     padding: 0.1rem 0.3rem;
 
-    font-size: 1rem;
+    font-size: 0.6rem;
+  }
+
+  .project-card-chip-cirle {
+    width: 0.3rem;
+    height: 0.3rem;
   }
 
   .prject-card-description {
-    margin-block: 0.5rem 0.5rem;
+    margin-block: 0rem 0.5rem;
 
     font-size: 1.1rem;
   }
