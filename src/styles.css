@@ -157,9 +157,9 @@ body {
 }
 
 .skill-card {
-  height: 10rem;
-  width: 7rem;
-  padding: 1rem;
+  width: 8rem;
+  height: auto;
+  padding: 1rem 0.5rem;
 
   background-color: var(--color-black);
   border: 3px solid var(--color-red);
@@ -170,7 +170,7 @@ body {
   flex-direction: column;
   gap: 1rem;
 
-  align-items: space-between;
+  align-items: space-around;
 
   transition: transform ease-in-out 0.07s;
 }
@@ -182,7 +182,8 @@ body {
 .skill-card-image {
   color: var(--color-red);
 
-  height: 7rem;
+  height: 6rem;
+  width: auto;
 }
 
 .skill-card-name {
