@@ -148,9 +148,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 
-  justify-content: center;
-
   gap: 1rem;
+}
+
+.skills-container {
+  justify-content: center;
 }
 
 .skill-card {
@@ -195,6 +197,10 @@ body {
   background-color: var(--color-white);
 
   padding: 5rem 5rem;
+}
+
+.projects-container {
+  justify-content: center;
 }
 
 .project-card {
