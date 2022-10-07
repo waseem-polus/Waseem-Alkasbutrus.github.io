@@ -1,11 +1,7 @@
 @media screen and (max-width: 750px) {
-    :root {
-        flex-direction: column;
-        justify-content: stretch;
-    }
-
     .landing-section {
         flex-direction: column;
+        justify-content: start;
     }
 
     .skills-section {
