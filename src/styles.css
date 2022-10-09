@@ -19,6 +19,14 @@ body {
   box-sizing: border-box;
 }
 
+a, 
+a:visited, 
+a:active, 
+a:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .skew {
   transform: skewy(-3deg);
 }
@@ -249,7 +257,7 @@ body {
   padding-left: 1rem;
   display: flex;
   flex-direction: row;
-  gap: 0.3rem;
+  gap: 0.2rem;
 
   list-style-type: none;
 }
