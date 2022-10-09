@@ -267,7 +267,11 @@ a:link {
   background: var(--color-black);
   font-size: 0.8rem;
 
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+
   padding: 0.2rem 0.5rem;
 
   border: 0.1rem solid var(--color-red);
