@@ -22,7 +22,8 @@ body {
 a, 
 a:visited, 
 a:active, 
-a:hover {
+a:hover,
+a:link {
   text-decoration: inherit;
   color: inherit;
 }
