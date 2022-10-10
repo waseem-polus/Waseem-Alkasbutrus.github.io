@@ -223,6 +223,12 @@ a:link {
 
   display: flex;
   flex-direction: row;
+
+  transition: transform ease-in-out 0.08s;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
 }
 
 .project-card-black-area {

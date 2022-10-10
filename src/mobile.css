@@ -136,6 +136,10 @@
     flex-direction: row;
   }
 
+  .project-card:hover {
+    transform: none;
+  }
+
   .project-card-black-area {
     height: 10rem;
     width: 100%;
