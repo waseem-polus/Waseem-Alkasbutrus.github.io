@@ -85,6 +85,11 @@
     height: 2rem;
   }
 
+  .flex-container {  
+    gap: 0.5rem;
+  }
+  
+
   .skills-section {
     margin: 0rem;
     background-color: var(--color-black);
@@ -116,11 +121,15 @@
     margin: 0rem;
     background-color: var(--color-white);
 
-    padding: 5rem 1rem;
+    padding: 5rem 0.5rem;
   }
 
   .projects-container {
-    justify-content: center;
+    justify-content: stretch;
+  }
+
+  .project-link-container {
+    width: 100%;
   }
 
   .project-card {
