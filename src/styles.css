@@ -66,6 +66,8 @@ a:link {
   height: 25rem;
   margin: 0rem;
 
+  mix-blend-mode: darken;
+
   border-radius: 360px;
 }
 
