@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:active,
+a:hover,
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}

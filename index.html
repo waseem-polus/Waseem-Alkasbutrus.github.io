@@ -1,172 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <title>Waseem's Portfolio</title>
+        <link rel="icon" href="./assets/Favicon.svg" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./src/styles.css" />
+        <link rel="stylesheet" href="./src/mobile.css" />
+        <link rel="stylesheet" href="./src/reset.css" />
+    </head>
 
-<head>
-  <title>Waseem's Portfolio</title>
-  <link rel="icon" href="./assets/Favicon.svg" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./src/styles.css" />
-  <link rel="stylesheet" href="./src/mobile.css" />
-</head>
-
-<body>
-
-  <section class="landing-section skew">
-    <div class="landing-section unskew">
-      <img class="landing-section-image"
-        src="assets/Waseem.jpg">
-      <div class="landing-section-content">
-        <section class="landing-section-content-header">
-          <h4 class="landing-section-hello">Hello,</h4>
-          <h4 class="landing-section-name">
-            <span>I'm</span> Waseem
-          </h4>
-        </section>
-        <p class="landing-section-description">
-          Senior computer science student in the University of Texas at Arlington with an interest in design, game development, and frontend development.
-        </p>
-        <ul class="landing-section-button-list">
-          <li>
-            <a class="landing-section-button" target="_blank" href="https://www.linkedin.com/in/waseem-polus/">
-              <img src="assets/LinkedIn Social Button.svg">
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a class="landing-section-button" target="_blank" href="https://github.com/waseem-polus">
-              <img src="assets/GitHub Social Button Black.svg">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a class="landing-section-button" target="_blank" href="https://codepen.io/waseem-polus">
-              <img src="assets/Codepen Social Button.svg">
-              CodePen
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="skills-section skew">
-    <div class="unskew">
-      <h3 class="red section-title">My Skills</h3>
-      <section id="skill-section" class="flex-container skills-container">
-        <!-- Skills -->
-      </section>
-    </div>
-  </section>
-
-  <section class="projects-section skew">
-    <div class="unskew">
-      <h3 class="black section-title">My Projects</h3>
-      <section id="project-section" class="flex-container projects-container">
-        <!-- Projects -->
-      </section>
-    </div>
-  </section>
-
-  <script>
-    const github = "https://github.com/";
-    const skillIconDir = "./assets/";
-    const projectImgDir = "./assets/project-images";
-
-    const mySkills = [
-      { name: "JavaScript"},
-      { name: "HTML"},
-      { name: "CSS"},
-      { name: "React JS", icon: "React"},
-      { name: "React Native", icon: "React"},
-      { name: "C#", icon: "CS"},
-      { name: "PHP"},
-      { name: "MySQL"},
-      { name: "Unity"},
-      { name: "C"},
-      { name: "Java"},
-      { name: "Linux"}
-    ];
-
-    const myProjects = [
-      {
-        github: "Waseem-Alkasbutrus/GMTK-Game-Jam-2022",
-        img: "RollAbility",
-        techStack: ["Unity", "C#"],
-        name: "RollAbility",
-        description: "Entry for GMTK Game Jam 2022. Single-player, 2D plaformer"
-      },
-      {
-        github: "Waseem-Alkasbutrus/CloudCast",
-        img: "CloudCast",
-        techStack: ["React Native", "JS", "Expo"],
-        name: "CloudCast",
-        description: "Real-time global weather app"
-      },
-      {
-        github: "mavs-octagon/Temple",
-        img: "Octapoints",
-        techStack: ["React Native", "JS", "C"],
-        name: "Octapoints",
-        description: "Decentraslized, NFC, attendance-based point-awarding system"
-      },
-      {
-        github: "Waseem-Alkasbutrus/Nexus_Light",
-        img: "NexusLight",
-        techStack: ["Unity", "C#"],
-        name: "Nexus Light",
-        description: "Single-player, 2D speedrunning platformer"
-      },
-      {
-        github: "Waseem-Alkasbutrus/WebPoker",
-        img: "MavPoker",
-        techStack: ["Java", "JS", "HTML", "CSS"],
-        name: "MavPoker",
-        description: "Web based multiplayer 5-card draw poker game"
-      },
-    ];
-
-    const skillSection = document.querySelector("#skill-section");
-    const projectSection = document.querySelector("#project-section");
-
-    mySkills.forEach((skill) => skillSection.innerHTML += `
-      <div class="skill-card">
-        <img class="skill-card-image" src="./assets/${skill.icon? skill.icon : skill.name}.svg" />
-        <div class="skill-card-name-holder">
-          <p class="skill-card-name">${skill.name}</p>
-        </div>
-      </div>
-    `)
-
-    myProjects.forEach((project) => projectSection.innerHTML += `
-      <a class="project-link-container" target="_blank" href="https://github.com/${project.github}">
-        <div class="project-card" style="
-              background-image: url('./assets/project-images/${project.img}.png');
-            ">
-          <div class="project-card-black-area">
-            <div>
-              <div class="project-card-top-line">
-                <h4 class="project-card-name">${project.name}</h4>
-                <ul class="project-card-chip-list">
-                  ${project.techStack.map((tech) => `
-                      <li class="project-card-chip">
-                        <span class="project-card-chip-cirle"></span>
-                        ${tech}
-                      </li>
-                    `).join('')}
-                </ul>
-              </div>
-              <p class="prject-card-description">
-                ${project.description}
-              </p>
+    <body>
+        <section class="landing-section skew">
+            <div class="landing-section unskew">
+                <img class="landing-section-image" src="assets/Waseem.jpg" />
+                <div class="landing-section-content">
+                    <section class="landing-section-content-header">
+                        <h4 class="landing-section-hello">Hello,</h4>
+                        <h4 class="landing-section-name">
+                            <span>I'm</span> Waseem
+                        </h4>
+                    </section>
+                    <p class="landing-section-description">
+                        Senior computer science student in the University of
+                        Texas at Arlington with an interest in design, game
+                        development, and frontend development.
+                    </p>
+                    <ul class="landing-section-button-list">
+                        <li>
+                            <a
+                                class="landing-section-button"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/waseem-polus/"
+                            >
+                                <img src="assets/LinkedIn Social Button.svg" />
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="landing-section-button"
+                                target="_blank"
+                                href="https://github.com/waseem-polus"
+                            >
+                                <img
+                                    src="assets/GitHub Social Button Black.svg"
+                                />
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="landing-section-button"
+                                target="_blank"
+                                href="https://codepen.io/waseem-polus"
+                            >
+                                <img src="assets/Codepen Social Button.svg" />
+                                CodePen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <section class="project-card-github">
-              <img src="./assets/GitHub Social Button.svg" />
-            </section>
-          </div>
-        </div>
-      </a>
-    `)
-  </script>
-</body>
+        </section>
+
+        <section class="skills-section skew">
+            <div class="unskew">
+                <h3 class="red section-title">My Skills</h3>
+                <section
+                    id="skill-section"
+                    class="flex-container skills-container"
+                >
+                    <!-- Skills -->
+                </section>
+            </div>
+        </section>
+
+        <section class="projects-section skew">
+            <div class="unskew">
+                <h3 class="black section-title">My Projects</h3>
+                <section
+                    id="project-section"
+                    class="flex-container projects-container"
+                >
+                    <!-- Projects -->
+                </section>
+            </div>
+        </section>
+
+        <script src="./src/components/skill/skill.js"></script>
+        <script src="./src/components/project/project.js"></script>
+        <script src="./src/index.js"></script>
+    </body>
 </html>
